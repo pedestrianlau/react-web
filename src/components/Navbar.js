@@ -12,7 +12,7 @@ function Navbar() {
   const handleClick = () => setClick(!click); // on click return false or true.
   const closeMobileMenu = () => setClick(false);
 
-  // ff screen size is less than or equal to 960 pixels
+  // If screen size is less than or equal to 960 pixels
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -35,7 +35,7 @@ function Navbar() {
             BEAR <FontAwesomeIcon icon={faCookie} />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
-            <FontAwesomeIcon color="white" icon={click ? faTimes : faBars} />
+            <FontAwesomeIcon color="beige" icon={click ? faTimes : faBars} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
